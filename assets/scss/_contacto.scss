@@ -1,0 +1,74 @@
+#contacto{
+	background: url(../../../imgs/contacto.jpg) no-repeat -294px top;
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	.info-img{
+		float: left;
+    	margin-left: 577px;
+		.no-mar{
+
+		}
+		.contact-f{
+
+		}
+		.no-pad-r{
+			padding-right: 0;
+		}
+	    padding-top: 40px;
+		h1{
+			color: #5c5a5a;
+			text-align: left;
+			font-size: 30px;
+			font-family: 'Open Sans', Arial, Helvetica;
+			font-weight: 600;
+			padding-bottom: 20px;
+		}
+		p{
+			font-family: 'Open Sans', Arial, Helvetica;
+			font-weight: 400;
+			color: #5c5a5a;
+			font-size: 14px;
+			span{
+				font-family: 'Open Sans', Arial, Helvetica;
+				font-weight: 600;
+			}
+		}
+		h2{
+				font-family: 'Open Sans', Arial, Helvetica;
+				font-weight: 600;
+				font-size: 21px;
+				color: #5c5a5a;
+				border-bottom: 1px solid #c4c4c4;
+    			padding-bottom: 20px;
+    			margin-bottom: 20px;
+		}
+		.contacto-form{
+			form{
+				input[type="text"]{
+					color: #5c5a5a;
+					font-family: 'Open Sans', Arial, Helvetica;
+					font-weight: 600;
+					font-size: 12px;
+				}
+				textarea{
+					color: #5c5a5a;
+					font-family: 'Open Sans', Arial, Helvetica;
+					font-weight: 600;
+					font-size: 12px;
+				}
+				.contact-send{
+					button{
+						font-family: 'Open Sans', Arial, Helvetica;
+						font-weight: 600;
+						color: #FFFFFF;
+						background: #f30002;
+						font-size: 12px;
+						text-transform: uppercase;
+						padding: 15px 40px;
+					}
+				}
+			}
+		}
+	}
+}

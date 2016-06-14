@@ -1,0 +1,37 @@
+#somos{
+	background: #2d2d2d;
+}
+#plastico{
+	background: url(../../../imgs/plastico.jpg) no-repeat left top;
+	width: 100%;
+	height: 514px;
+	.info-img{
+		float: left;
+	    padding-left: 200px;
+	    padding-top: 40px;
+		h1{
+			color: #5c5a5a;
+			text-align: left;
+			font-size: 30px;
+			font-family: 'Open Sans', Arial, Helvetica;
+			font-weight: 600;
+			padding-bottom: 20px;
+		}
+		p{
+			font-family: 'Open Sans', Arial, Helvetica;
+			font-weight: 600;
+			color: #5c5a5a;
+			font-size: 11px;
+		}
+	}
+}
+footer.especial{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1f1f1+0,ffffff+100 */
+background: #f1f1f1; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1f1f1 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f1f1f1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f1f1f1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
