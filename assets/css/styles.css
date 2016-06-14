@@ -6987,7 +6987,7 @@ footer.especial {
   background-size: contain; }
   #contacto .info-img {
     float: left;
-    margin-left: 577px;
+    margin-left: 380px;
     padding-top: 40px; }
     #contacto .info-img .no-pad-r {
       padding-right: 0; }
@@ -7032,3 +7032,116 @@ footer.especial {
       font-size: 12px;
       text-transform: uppercase;
       padding: 15px 40px; }
+
+#productos aside {
+  background: #4f4d4d; }
+  #productos aside ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0; }
+    #productos aside ul li {
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 10px; }
+      #productos aside ul li.active {
+        background: #ec1d23; }
+      #productos aside ul li a {
+        font-family: 'Open Sans', Arial, Helvetica;
+        font-weight: 600;
+        color: #FFFFFF;
+        font-size: 12px;
+        text-transform: uppercase; }
+
+#productos .analizador {
+  margin-top: 100px;
+  border-top: 1px solid #c4c2c3;
+  padding-top: 20px; }
+  #productos .analizador .producto-copy h1 {
+    font-family: 'Open Sans', Arial, Helvetica;
+    font-weight: 600;
+    font-size: 19px;
+    color: #5c5a5a; }
+  #productos .analizador .producto-copy p {
+    font-family: 'Open Sans', Arial, Helvetica;
+    font-weight: 600;
+    font-size: 11px;
+    color: #5c5a5a; }
+
+#productos .table-desc table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse; }
+  #productos .table-desc table thead {
+    background: #FFFFFF; }
+    #productos .table-desc table thead tr th {
+      font-family: 'Open Sans', Arial, Helvetica;
+      font-weight: 600;
+      font-size: 12px;
+      color: #5c5a5a;
+      text-transform: uppercase; }
+  #productos .table-desc table tbody tr td {
+    font-family: 'Open Sans', Arial, Helvetica;
+    font-weight: 600;
+    font-size: 12px;
+    color: #5c5a5a;
+    text-transform: uppercase;
+    border: 1px solid #c4c2c3; }
+    #productos .table-desc table tbody tr td button {
+      background: #4f4d4d;
+      font-family: 'Open Sans', Arial, Helvetica;
+      font-weight: 600;
+      font-size: 12px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding: 10px;
+      margin-bottom: 0; }
+
+#productos .table-desc .solicita i {
+  color: #0678b3;
+  border-radius: 50%;
+  padding: 3px 5px;
+  display: inline;
+  background: transparent;
+  border: 2px solid #0678b3; }
+
+#productos .table-desc .solicita span {
+  font-family: 'Open Sans', Arial, Helvetica;
+  font-weight: 600;
+  font-size: 13px;
+  color: #5c5a5a;
+  padding-left: 10px; }
+  #productos .table-desc .solicita span.tel {
+    color: #0678b3; }
+
+#productos .table-rel {
+  margin-top: 40px;
+  margin-bottom: 120px; }
+  #productos .table-rel h1 {
+    font-family: 'Open Sans', Arial, Helvetica;
+    font-weight: 600;
+    font-size: 20px;
+    color: #5c5a5a;
+    border-bottom: 1px solid #c4c2c3;
+    margin-bottom: 25px; }
+  #productos .table-rel table {
+    border: none;
+    width: 100%;
+    border-collapse: collapse; }
+    #productos .table-rel table tbody tr td {
+      font-family: 'Open Sans', Arial, Helvetica;
+      font-weight: 600;
+      font-size: 12px;
+      color: #5c5a5a;
+      text-transform: uppercase;
+      border: 1px solid #c4c2c3; }
+      #productos .table-rel table tbody tr td button {
+        background: #4f4d4d;
+        font-family: 'Open Sans', Arial, Helvetica;
+        font-weight: 600;
+        font-size: 12px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 0; }
