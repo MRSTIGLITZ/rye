@@ -1,30 +1,34 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
+var gulp = require('gulp'),
+    gutil = require('gulp-util'),
+    jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    babel = require('gulp-babel'),
+    browserSync = require('browser-sync').create();
 
-var sassPaths = [
-  'bower_components/foundation-sites/scss'
-];
+//define the default task and add the watch task to it
+gulp.task('default', ['build-styles', 'es6'], function(gulpCallback){
 
-gulp.task('sass', function(){
-  gulp.src('assets/scss/**/*.scss')
-    .pipe(sass({includePaths: sassPaths}).on('error', sass.logError))
-    .pipe(gulp.dest('assets/css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
-});
-
-gulp.task('browserSync', function(){
   browserSync.init({
-    server: {
-      baseDir: "./"
-    }
-  })
+    server: './',
+    open: true
+  }, function callback(){
+    gulp.watch(['index.html', 'access-control.html', 'documents.html', 'stats.html', 'home-results'],  browserSync.reload);
+    gulp.watch('source/scss/**/*.scss', ['build-styles']);
+    gulp.watch('source/javascript/**/*.js', ['es6'])
+    gulpCallback();
+  });
 });
 
-gulp.task('watch', ['sass', 'browserSync'],function(){
-  gulp.watch('assets/scss/**/*.scss', ['sass']);
-  gulp.watch('assets/javascript/**/*.js', browserSync.reload);
-  gulp.watch('*.html', browserSync.reload); 
+gulp.task('es6', function(){
+  return gulp.src('source/javascript/**/*.js')
+         .pipe(babel({presets: ['es2015']}))
+         .pipe(gulp.dest('public/assets/javascript'))
+});
+
+
+gulp.task('build-styles', function(){
+  return gulp.src('source/scss/**/styles.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('public/assets/stylesheets'))
+    .pipe(browserSync.stream());
 });

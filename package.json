@@ -1,20 +1,23 @@
 {
-  "name": "reactivos",
+  "name": "landing",
   "version": "1.0.0",
-  "description": "",
+  "description": "landing for digital showcase",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
+  "author": "Adrian Stiglitz",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.12.3",
+    "babel-core": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.1"
+    "gulp-babel": "^6.1.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
   }
 }
